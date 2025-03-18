@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "数式計算ツール",
+    "version": "1.0",
+    "description": "選択したテキストが数式の場合に計算を実行します",
+    "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [{
+      "resources": ["lib/math.js"],
+      "matches": ["<all_urls>"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+}
