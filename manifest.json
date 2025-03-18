@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "数式計算ツール",
+    "name": "QuickMath",
     "version": "1.0",
     "description": "選択したテキストが数式の場合に計算を実行します",
     "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
