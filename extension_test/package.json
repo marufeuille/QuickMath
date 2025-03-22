@@ -1,0 +1,12 @@
+{
+  "name": "calcer-extension-test",
+  "version": "1.0.0",
+  "description": "Chrome拡張の結合テスト",
+  "main": "extension.test.js",
+  "scripts": {
+    "test": "node extension.test.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
