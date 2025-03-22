@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "QuickMath",
     "version": "0.0.2",
-    "description": "選択したテキストが数式の場合に計算を実行します",
+    "description": "選択したテキストが数式の場合に計算を実行します。変数を含む式や方程式も処理できます。",
     "permissions": ["contextMenus", "storage", "activeTab", "scripting"],
     "background": {
       "service_worker": "background.js"
@@ -23,5 +23,8 @@
       "16": "images/icon16.png",
       "48": "images/icon48.png",
       "128": "images/icon128.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
     }
 }

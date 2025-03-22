@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>変数計算テスト</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .test-section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .test-section h2 {
+      margin-top: 0;
+      color: #444;
+    }
+    .expression {
+      font-family: monospace;
+      background: #f5f5f5;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      margin: 5px 0;
+    }
+    .instructions {
+      margin-bottom: 20px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>QuickMath 変数計算テスト</h1>
+  
+  <div class="instructions">
+    <p>このページでは、QuickMath拡張機能の変数計算機能をテストできます。</p>
+    <p>使い方:</p>
+    <ol>
+      <li>以下の式や方程式を選択します</li>
+      <li>右クリックして「数式を計算する」を選択します</li>
+      <li>変数を含む式の場合は、変数の値を入力すると結果が表示されます</li>
+      <li>方程式の場合は、自動的に解が表示されます</li>
+    </ol>
+  </div>
+
+  <div class="test-section">
+    <h2>1. 単一変数の式</h2>
+    <div class="expression">2 * x + 5</div>
+    <p>期待される動作: 変数xの入力フィールドが表示され、値を入力すると結果が計算されます。</p>
+  </div>
+
+  <div class="test-section">
+    <h2>2. 複数変数の式</h2>
+    <div class="expression">x * y + z</div>
+    <p>期待される動作: 変数x、y、zの入力フィールドが表示され、すべての値を入力すると結果が計算されます。</p>
+  </div>
+
+  <div class="test-section">
+    <h2>3. 単純な方程式</h2>
+    <div class="expression">2 * x + 5 = 15</div>
+    <p>期待される動作: 方程式が解かれ、x = 5 と表示されます。</p>
+  </div>
+
+  <div class="test-section">
+    <h2>4. 二次方程式</h2>
+    <div class="expression">x^2 - 4 = 0</div>
+    <p>期待される動作: 方程式が解かれ、x = 2 と x = -2 の2つの解が表示されます。</p>
+  </div>
+
+  <div class="test-section">
+    <h2>5. 別の二次方程式</h2>
+    <div class="expression">x^2 + 2*x + 1 = 0</div>
+    <p>期待される動作: 方程式が解かれ、x = -1 の重解が表示されます。</p>
+  </div>
+
+  <div class="test-section">
+    <h2>6. 通常の数式（変数なし）</h2>
+    <div class="expression">12 + 34 * 2</div>
+    <p>期待される動作: 従来通り計算結果（80）が表示されます。</p>
+  </div>
+
+  <div class="instructions" style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
+    <h3>サポートされている方程式のタイプ</h3>
+    <ul>
+      <li><strong>線形方程式</strong>: ax + b = c の形式（例: 2x + 5 = 15）</li>
+      <li><strong>二次方程式</strong>: ax² + bx + c = 0 の形式（例: x² - 4 = 0）</li>
+    </ul>
+    <p>注意: より複雑な方程式は現在サポートされていません。</p>
+  </div>
+</body>
+</html>
